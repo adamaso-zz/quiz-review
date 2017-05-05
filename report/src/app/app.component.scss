@@ -1,0 +1,121 @@
+@import '../assets/global-styles/sass/_vars.scss';
+@import '../assets/global-styles/fonts/FuturaPT_font/stylesheet.css';
+@import '../assets/global-styles/fonts/ProximaNova/stylesheet.css';
+
+$gray-two: #F4F3EC;
+
+nav {
+    width: 100%;
+    height: 42px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: $primary-color;
+}
+
+.kaplan-logo {
+    width: 60px;
+    height: 60px;
+    left: 10%;
+    position: absolute;
+    display: inline-block;
+}
+
+.nav-title {
+    height: 25px;
+    width: 70px;
+    color: #FFFFFF;
+    font-family: "Futura PT";
+    font-size: 19px;
+    font-weight: bold;
+    left: 20%;
+    top: -8px;
+    position: absolute;
+    line-height: 25px;
+    display: inline-block;
+}
+
+.top-container {
+    position: relative;
+    top: 50px;
+    width: 75%;
+    left: 10%;
+}
+
+.container {
+    position: relative;
+    top: 200px;
+    width: 75%;
+    left: 10%;
+    background-color: white;
+}
+
+.back-to-home {
+	height: 22px;
+	width: 131px;
+	color: #555555;
+	font-family: "Proxima Nova";
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 22px;
+    text-decoration: none;
+    top: 40px;
+    position: absolute;
+}
+
+.quiz-review {
+	height: 46px;
+	width: 214px;
+	color: $primary-color;
+	font-family: "Futura PT";
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 46px;
+    position: absolute;
+    top: 60px;
+}
+
+.primary-button {
+    height: 42px;
+    border-radius: 2px;
+    background-color: #FFC82E;
+    color: #1E0576;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    line-height: 20px;
+    text-align: center;
+    min-width: 100px;
+}
+
+#overall-performance {
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.quiz-stats {
+    padding: 20px;
+}
+
+
+@media (max-width: 500px) {
+    .nav-title {
+        display: none;
+    }
+
+    #overall-performance {
+        left: 0;
+        display: inline-block;
+        top: 150px;
+    }
+
+    .container {
+        top: 260px;
+    }
+}
+
+    

@@ -1,0 +1,15 @@
+/**
+ * Module Dependencies
+ */
+
+@import './sass-import-once';
+
+/**
+ * Exports
+ */
+
+@include exports('_fonts') {
+    @import url('../fonts/FuturaPT_font/stylesheet.css');
+    @import url('../fonts/ProximaNova/stylesheet.css');
+    @import url('../fonts/SofiaPro/stylesheet.css');
+}

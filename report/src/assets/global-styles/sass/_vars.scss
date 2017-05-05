@@ -1,0 +1,116 @@
+@import '_mixins';
+
+////////////////////////
+//      COLORS        //
+////////////////////////
+
+
+// Base Colors
+$primary-color:         rgb(30,5,118);
+$secondary-color:       rgb(0,93,232);
+$background-color:      rgb(244,245,246);
+$black:                  rgb(0,0,0);
+$white:                  rgb(255,255,255);
+
+// Accent Colors - used number suffixes instead of color names in case of changes
+$accent-color--one:            rgb(355,200,46);
+$accent-color--two:            rgb(229,83,2);
+
+// Grey Colors - used number suffixes instead of color names in case of changes
+$grey-color--one:              rgb(51,51,51);
+$grey-color--two:              rgb(102,102,102);
+$grey-color--three:            rgb(245,243,231);
+$grey-color--four:             rgb(241,241,241);
+
+//Color Variations (Opacity)
+$opacity-color--light:         0.75;
+$opacity-color--lighter:       0.50;
+$opacity-color--lightest:      0.25;
+$opacity-color--none:          0.00;
+
+//Notifications
+$color-success:        rgb(52,132,45);
+$color-warning:        rgb(252,214,108);
+$color-danger:         rgb(196,10,13);
+$color-info:           rgb(0,83,159);
+
+//Notification Colors
+$notification-opacity:  0.30;
+
+$notification-opacity--success:  rgba($color-success, $notification-opacity);
+$notification-opacity--warning:  rgba($color-warning, $notification-opacity);
+$notification-opacity--danger:   rgba($color-danger, $notification-opacity);
+$notification-opacity--info:     rgba($color-info, $notification-opacity);
+
+// Base Color Background Classes
+.primary-color--background {
+    background-color: $primary-color;
+}        
+.secondary-color--background {
+    background-color: $secondary-color;
+}      
+.background-color--base {
+    background-color: $background-color;
+}      
+
+// Accent Color Background Classes 
+.accent-color-background--one {
+    background-color:  $accent-color--one;
+}          
+.accent-color-background--two {
+    background-color: $accent-color--two;
+}
+
+// Grey Background Colors 
+.grey-color-background--one {
+    background-color: $grey-color--one;
+}
+
+.grey-color-background--two {
+    background-color: $grey-color--two;  
+}
+
+.grey-color-background--three {
+    background-color: $grey-color--three;
+}        
+
+.grey-color-background--four {
+    background-color: $grey-color--four;
+}
+
+// Base Color Classes
+.color--primary {
+    color: $primary-color;
+}        
+.color--secondary {
+    color: $secondary-color;
+}
+
+// Accent Color  Classes 
+.color-accent--one {
+    color:  $accent-color--one;
+}          
+.color-accent--two {
+    color: $accent-color--two;
+}
+
+// Grey  Colors 
+.color-grey--one {
+    color: $grey-color--one;
+}
+
+.color-grey--two {
+    color: $grey-color--two;  
+}
+
+.color-grey--three {
+    color: $grey-color--three;
+}        
+
+.color-grey--four {
+    color: $grey-color--four;
+}    
+
+.color-white {
+    color: $white;
+}

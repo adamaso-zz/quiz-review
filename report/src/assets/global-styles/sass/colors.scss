@@ -1,0 +1,198 @@
+@import '_vars';
+
+.primary-color {
+    background-color: $primary-color;
+    position: relative;
+    
+    p {
+        @include rgbvalue;
+    }
+}
+
+.secondary-color {
+    background-color: $secondary-color;
+    position: relative;
+
+    p {
+        @include rgbvalue;
+    }
+}
+
+.bg-color {
+    background-color: $background-color;
+    position: relative;
+
+    p {
+        @include rgbvalue-dark;
+    }
+}
+
+.accent-one {
+    background-color: $accent-color--one;
+    position: relative;
+
+    p {
+        @include rgbvalue-dark;
+    }
+}
+
+.accent-two {
+    background-color: $accent-color--two;
+    position: relative;
+
+    p {
+        @include rgbvalue;
+    }
+}
+
+.accent-two {
+    background-color: $accent-color--two;
+    position: relative;
+
+    p {
+        @include rgbvalue;
+    }
+}
+
+.grey-one {
+    background-color: $grey-color--one;
+    position: relative;
+
+    p {
+        @include rgbvalue;
+    }
+}
+
+.grey-two {
+    background-color: $grey-color--two;
+    position: relative;
+
+    p {
+        @include rgbvalue;
+    }
+}
+
+.grey-three {
+    background-color: $grey-color--three;
+    position: relative;
+
+    p {
+        @include rgbvalue-dark;
+    }
+}
+
+.grey-four {
+    background-color: $grey-color--four;
+    position: relative;
+
+    p {
+        @include rgbvalue-dark;
+    }
+}
+
+.button-success {
+    background-color: $color-success;
+    position: relative;
+
+    p {
+        @include rgbvalue;
+    }
+}
+
+.button-warning {
+    background-color: $color-warning;
+    position: relative;
+
+    p {
+        @include rgbvalue-dark;
+    }
+}
+
+.button-info {
+    background-color: $color-info;
+    position: relative;
+
+    p {
+        @include rgbvalue;
+    }
+}
+
+.button-danger {
+    background-color: $color-danger;
+    position: relative;
+
+    p {
+        @include rgbvalue;
+    }
+}
+
+.notification-success {
+    background-color: $notification-opacity--success;
+    position: relative;
+
+    p {
+        @include rgbvalue-dark;
+        left: 65%;
+        width: 100%;
+    }
+}
+
+.notification-warning {
+    background-color: $notification-opacity--warning;
+    position: relative;
+
+    p {
+        @include rgbvalue-dark;
+        left: 65%;
+        width: 100%;
+    }
+}
+
+.notification-info {
+    background-color: $notification-opacity--info;
+    position: relative;
+
+    p {
+        @include rgbvalue-dark;
+        left: 65%;
+        width: 100%;
+    }
+}
+
+.notification-danger {
+    background-color: $notification-opacity--danger;
+    position: relative;
+
+    p {
+        @include rgbvalue-dark;
+        left: 65%;
+        width: 100%;
+    }
+}
+
+
+.box {
+    width: 300px;
+    height: 150px;
+    border: 1px solid $black;
+    margin: 10px;
+    display: inline-block;
+
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        white-space: nowrap;
+    }
+
+    caption {
+        background-color: $white;
+        color: black;
+        margin: 0 auto;
+        padding: 5px;
+        white-space: nowrap;
+        width: 298px;
+    }
+}

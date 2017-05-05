@@ -1,0 +1,156 @@
+@import '_vars';
+
+button {
+    border-radius: $button-border-radius;
+    font-family: $primary-font;
+    font-size: $font-size;
+    width: $button-width;
+    padding: $button-padding;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+
+    &.button-primary--small {
+        background-color: $accent-color--one;
+        color: $primary-color;
+        height: $button-height--small;
+        width: $button-width;
+        padding: 0;
+        font-family: $primary-font;
+        font-size: $font-size;
+
+        &:hover {
+		    background-color: $button-hover--primary;
+	    }
+    }
+
+    &.button-primary--large {
+        background-color: $accent-color--one;
+        color: $primary-color;
+        font-family: $primary-font;
+        font-size: $font-size--large;
+        font-weight: $font-weight--bold;
+        height: $button-height--large;
+        width: $button-width--large;
+        padding: 0;
+
+        &:hover {
+		    background-color: $button-hover--primary;
+	    }
+    }
+
+    &.button-secondary--small {
+        width: $button-width;
+        background-color: $secondary-color;
+        color: $white;
+        height: $button-height--small;
+        padding: 0;
+
+        &:hover {
+		    background-color: $button-hover--secondary;
+	    }
+    }
+
+    &.button-secondary--large {
+        width: $button-width--large;
+        background-color: $secondary-color;
+        color: $white;
+        font-weight: $font-weight--bold;
+        font-size: $font-size--large;
+        height: $button-height--large;
+        padding: 0;
+
+        &:hover {
+		    background-color: $button-hover--secondary;
+	    }
+    }
+
+    &.button--inactive {
+        cursor: not-allowed;
+        pointer-events: none;
+        background-color: $grey-color--two;
+        color: $white;
+        height: $button-height--small;
+    }
+
+    &.button--ghost--small {
+      height: $button-height--small;
+      width: $button-width;
+      background-color: transparent;
+      color: $secondary-color;
+      border: 2px solid #005de8;
+
+      &:hover {
+        color: $white;
+        background-color: $secondary-color;
+      }
+    }
+
+     &.button--ghost--large {
+       width: $button-width--large;
+       height: $button-height--large;
+       background-color: transparent;
+       color: $secondary-color;
+       border: 2px solid $secondary-color;
+
+        &:hover {
+            color: #FFFFFF;
+            background-color: $secondary-color;
+        }
+    }
+
+}
+
+// These classes only exist locally in the Higgs app
+
+.color-success {
+    background-color: $color-success;
+}
+
+.color-warning {
+    background-color: $color-warning;
+}
+
+.color-danger {
+    background-color: $color-danger;
+}
+
+.color-info {
+    background-color: $color-info;
+}
+
+.danger{
+    border: 1px darken($color-danger, 50%);
+    background-color: $color-danger;
+
+    &:hover {
+        background-color: $notification-opacity--danger;
+    }
+}
+
+.success{
+    border: 1px darken($color-success, 50%);
+    background-color: $color-success;
+
+    &:hover {
+        background-color: $notification-opacity--success;
+    }
+}
+
+.warning{
+    border: 1px darken($color-warning, 50%);
+    background-color: $color-warning;
+
+    &:hover {
+        background-color: $notification-opacity--warning;
+    }
+}
+
+.primary-gradient {
+     background: linear-gradient(45deg,  rgb(35,47,132) 0%,rgb(102,51,153) 100%);
+}
+
+.secondary-gradient {
+     background: linear-gradient(45deg,  rgb(9,126,155) 0%,rgb(32,124,202) 5%,rgb(35,174,165) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
