@@ -38,14 +38,14 @@ nav {
 .top-container {
     position: relative;
     top: 50px;
-    width: 75%;
+    width: 80%;
     left: 10%;
 }
 
 .container {
     position: relative;
     top: 200px;
-    width: 75%;
+    width: 80%;
     left: 10%;
     background-color: white;
 }
@@ -61,6 +61,50 @@ nav {
     text-decoration: none;
     top: 40px;
     position: absolute;
+}
+
+#mpq {
+    height: 22px;
+    width: 167px;
+    color: $primary-color;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+#mpq-topics {
+    height: 15px;
+    width: 85px;
+    color: $primary-color;
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    line-height: 15px;
+}
+
+#mpq-percentage {
+    height: 87px;	
+    width: 166.97px;	
+    color: $primary-color;	
+    font-family: "Proxima Nova";	
+    font-size: 72px;	
+    font-weight: 600;	
+    line-height: 87px;
+}
+
+.mpq-indicator {
+    height: 15px;
+    width: 61.78px;
+    color: #555555;	
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    text-align: center;
+}
+
+.mpq-icon {
+    text-align: center;
 }
 
 .quiz-review {
@@ -89,6 +133,19 @@ nav {
     min-width: 100px;
 }
 
+.secondary-button {
+    height: 42px;
+    border-radius: 2px;
+    background-color: $secondary-color;
+    color: white;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    border: none;
+    line-height: 20px;
+    text-align: center;
+    min-width: 100px;
+}
+
 #overall-performance {
     padding-left: 30px;
     padding-right: 30px;
@@ -101,6 +158,40 @@ nav {
     padding: 20px;
 }
 
+// FLEXBOX 
+.flex-container {
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    }
+
+.flex-item {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    padding: 10px;
+    }
 
 @media (max-width: 500px) {
     .nav-title {
@@ -116,6 +207,52 @@ nav {
     .container {
         top: 260px;
     }
+
+    .mpq-flex-container {
+    overflow: auto;
+    }
+
 }
 
     
+.mpq-flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+     -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    }
+
+.mpq-flex-item {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding: 10px;
+    }
+
+.mpq-review {
+    width: 80%;
+}
+
+.mpq-gray {
+    background-color: $gray-two;
+}

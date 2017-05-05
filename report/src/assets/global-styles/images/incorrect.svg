@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ic/incorrect-16/gray copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Quiz-Review-04" transform="translate(-446.000000, -322.000000)">
+            <g id="Score" transform="translate(152.000000, 222.000000)">
+                <g id="Correct-incorrect" transform="translate(177.000000, 100.000000)">
+                    <g id="ic/incorrect-16/gray-copy" transform="translate(117.000000, 0.000000)">
+                        <g id="ic-incorrect">
+                            <path d="M8,16 C12.418278,16 16,12.418278 16,8 C16,3.581722 12.418278,0 8,0 C3.581722,0 0,3.581722 0,8 C0,12.418278 3.581722,16 8,16 Z" id="Oval-Copy-2" fill="#D6083B"></path>
+                            <g id="Group" transform="translate(5.600000, 5.600000)" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="square">
+                                <path d="M1.11022302e-14,4.82379306 L4.79280925,0" id="Check"></path>
+                                <path d="M1.19904087e-14,4.82379306 L4.79280925,0" id="Check" transform="translate(2.396405, 2.411897) scale(-1, 1) translate(-2.396405, -2.411897) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
