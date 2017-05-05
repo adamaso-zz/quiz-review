@@ -1,8 +1,8 @@
 <nav>
-  <div class="higgs-navigation">
+
     <img src="../assets/kaplogo.png" class="kaplan-logo">
     <h2 class="nav-title">QBANK</h2>
-  </div>
+
 </nav>
 
 <div class="top-container">
@@ -27,31 +27,55 @@
       </div>
       <div class="flex-item mpq-icon">
         <img src="../assets/global-styles/images/incorrect.svg">
-        <p class="mpq-indicator">2 Correct</p>
+        <p class="mpq-indicator">3 Incorrect</p>
       </div>
       <div class="flex-item mpq-icon">
         <img src="../assets/global-styles/images/skip.svg">
-        <p class="mpq-indicator">1 Skipped</p>
+        <p class="mpq-indicator">0 Skipped</p>
       </div>
     </div>
 
   <div class="mpq-review">
+    <!--title row-->
+    <div class="mpq-flex-container" style="font-weight:bold;">
+      <div class="mpq-flex-item header-qnumber">
+        #
+      </div>
+      <div class="mpq-flex-item mpqquestion" style="position: relative; left: -10px;">
+        Question
+      </div>
+      <div class="mpq-flex-item header-topic" style="position: relative; left: -15px;">
+        Topic
+      </div>
+      <div class="mpq-flex-item header-difficulty" style="position: relative; left: -30px;">
+        Difficulty
+      </div>
+      <div class="mpq-flex-item header-timespent" style="position: relative; left: -70px;">
+        Time Spent
+      </div>
+      <div class="mpq-flex-item">
+      </div>
+    </div>
+
     <!--first row-->
     <div class="mpq-flex-container mpq-gray">
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-qnumber">
+        <img *ngIf="myPracticeQuiz[0].isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator">
+        <img *ngIf="!myPracticeQuiz[0].isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator">
+         <p class="num">{{myPracticeQuiz[0].id}}</p>
+        <img *ngIf="myPracticeQuiz[0].isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark">
       </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item mpqquestion">
+        {{myPracticeQuiz[0].question}}
       </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-topic">
+        {{myPracticeQuiz[0].topic}}
       </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-difficulty">
+        {{myPracticeQuiz[0].difficulty}}
       </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-timespent">
+        {{myPracticeQuiz[0].timeSpent}}
       </div>
       <div class="mpq-flex-item">
        <button class="secondary-button">Review</button>
@@ -60,42 +84,48 @@
 
     <!--second row-->
     <div class="mpq-flex-container">
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-qnumber">
+        <img *ngIf="myPracticeQuiz[1].isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator">
+        <img *ngIf="!myPracticeQuiz[1].isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator">
+         <p class="num">{{myPracticeQuiz[1].id}}</p>
+         <img *ngIf="myPracticeQuiz[1].isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark">
+      </div>
+     <div class="mpq-flex-item mpqquestion">
+        {{myPracticeQuiz[1].question}}
+      </div>
+      <div class="mpq-flex-item header-topic">
+        {{myPracticeQuiz[1].topic}}
+      </div>
+      <div class="mpq-flex-item header-difficulty">
+        {{myPracticeQuiz[1].difficulty}}
+      </div>
+      <div class="mpq-flex-item header-timespent">
+        {{myPracticeQuiz[1].timeSpent}}
       </div>
       <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        <button class="secondary-button">Review</button>
+       <button class="secondary-button">Review</button>
       </div>
     </div>
 
     <!--third row-->
     <div class="mpq-flex-container mpq-gray">
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-qnumber">
+        <img *ngIf="myPracticeQuiz[2].isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator">
+        <img *ngIf="!myPracticeQuiz[2].isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator">
+         <p class="num">{{myPracticeQuiz[2].id}}</p>
+        <img *ngIf="myPracticeQuiz[2].isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark">
       </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item mpqquestion">
+        {{myPracticeQuiz[2].question}}
       </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-topic">
+        {{myPracticeQuiz[2].topic}}
       </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-difficulty">
+        {{myPracticeQuiz[2].difficulty}}
       </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-timespent">
+        {{myPracticeQuiz[2].timeSpent}}
       </div>
       <div class="mpq-flex-item">
        <button class="secondary-button">Review</button>
@@ -104,64 +134,74 @@
 
     <!--fourth row-->
     <div class="mpq-flex-container">
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-qnumber">
+        <img *ngIf="myPracticeQuiz[3].isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator">
+        <img *ngIf="!myPracticeQuiz[3].isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator">
+         <p class="num">{{myPracticeQuiz[3].id}}</p>
+        <img *ngIf="myPracticeQuiz[3].isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark">      
+      </div>
+      <div class="mpq-flex-item mpqquestion">
+        {{myPracticeQuiz[3].question}}
+      </div>
+      <div class="mpq-flex-item header-topic">
+        {{myPracticeQuiz[3].topic}}
+      </div>
+      <div class="mpq-flex-item header-difficulty">
+        {{myPracticeQuiz[3].difficulty}}
+      </div>
+      <div class="mpq-flex-item header-timespent">
+        {{myPracticeQuiz[3].timeSpent}}
       </div>
       <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        <button class="secondary-button">Review</button>
+       <button class="secondary-button">Review</button>
       </div>
     </div>
 
     <!--fifth row-->
     <div class="mpq-flex-container mpq-gray">
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-qnumber">
+        <img *ngIf="myPracticeQuiz[4].isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator">
+        <img *ngIf="!myPracticeQuiz[4].isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator">
+         <p class="num">{{myPracticeQuiz[4].id}}</p>
+        <img *ngIf="myPracticeQuiz[4].isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark">
+      </div>
+      <div class="mpq-flex-item mpqquestion">
+        {{myPracticeQuiz[4].question}}
+      </div>
+      <div class="mpq-flex-item header-topic">
+        {{myPracticeQuiz[4].topic}}
+      </div>
+      <div class="mpq-flex-item header-difficulty">
+        {{myPracticeQuiz[4].difficulty}}
+      </div>
+      <div class="mpq-flex-item header-timespent">
+        {{myPracticeQuiz[4].timeSpent}}
       </div>
       <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        <button class="secondary-button">Review</button>
+       <button class="secondary-button">Review</button>
       </div>
     </div>
 
     <!--sixth row-->
     <div class="mpq-flex-container">
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-qnumber">
+        <img *ngIf="myPracticeQuiz[5].isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator">
+        <img *ngIf="!myPracticeQuiz[5].isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator">
+         <p class="num">{{myPracticeQuiz[5].id}}</p>
+        <img *ngIf="myPracticeQuiz[5].isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark">         
       </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
+      
+      <div class="mpq-flex-item mpqquestion">
+        {{myPracticeQuiz[5].question}}
       </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-topic">
+        {{myPracticeQuiz[5].topic}}
       </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-difficulty">
+        {{myPracticeQuiz[5].difficulty}}
       </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-timespent">
+        {{myPracticeQuiz[5].timeSpent}}
       </div>
       <div class="mpq-flex-item">
        <button class="secondary-button">Review</button>
@@ -170,89 +210,102 @@
 
     <!--seventh row-->
     <div class="mpq-flex-container mpq-gray">
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-qnumber">
+        <img *ngIf="myPracticeQuiz[6].isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator">
+        <img *ngIf="!myPracticeQuiz[6].isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator">
+         <p class="num">{{myPracticeQuiz[6].id}}</p>
+        <img *ngIf="myPracticeQuiz[6].isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark">         
+      </div>
+      <div class="mpq-flex-item mpqquestion">
+        {{myPracticeQuiz[6].question}}
+      </div>
+      <div class="mpq-flex-item header-topic">
+        {{myPracticeQuiz[6].topic}}
+      </div>
+      <div class="mpq-flex-item header-difficulty">
+        {{myPracticeQuiz[6].difficulty}}
+      </div>
+      <div class="mpq-flex-item header-timespent">
+        {{myPracticeQuiz[6].timeSpent}}
       </div>
       <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        <button class="secondary-button">Review</button>
+       <button class="secondary-button">Review</button>
       </div>
     </div>
 
     <!--eighth row-->
     <div class="mpq-flex-container">
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-qnumber">
+        <img *ngIf="myPracticeQuiz[7].isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator">
+        <img *ngIf="!myPracticeQuiz[7].isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator">
+         <p class="num">{{myPracticeQuiz[7].id}}</p>
+        <img *ngIf="myPracticeQuiz[7].isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark">
+      </div>
+      <div class="mpq-flex-item mpqquestion">
+        {{myPracticeQuiz[7].question}}
+      </div>
+      <div class="mpq-flex-item header-topic">
+        {{myPracticeQuiz[7].topic}}
+      </div>
+      <div class="mpq-flex-item header-difficulty">
+        {{myPracticeQuiz[7].difficulty}}
+      </div>
+      <div class="mpq-flex-item header-timespent">
+        {{myPracticeQuiz[7].timeSpent}}
       </div>
       <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        <button class="secondary-button">Review</button>
+       <button class="secondary-button">Review</button>
       </div>
     </div>
 
     <!--ninth row-->
-    <div class="mpq-flex-container mpq-gray">
-      <div class="mpq-flex-item">
-        jfjdksfns
+     <div class="mpq-flex-container mpq-gray">
+      <div class="mpq-flex-item header-qnumber">
+        <img *ngIf="myPracticeQuiz[8].isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator">
+        <img *ngIf="!myPracticeQuiz[8].isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator">
+         <p class="num">{{myPracticeQuiz[8].id}}</p>
+       <img *ngIf="myPracticeQuiz[8].isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark">
+      </div>
+      <div class="mpq-flex-item mpqquestion">
+        {{myPracticeQuiz[8].question}}
+      </div>
+      <div class="mpq-flex-item header-topic">
+        {{myPracticeQuiz[8].topic}}
+      </div>
+      <div class="mpq-flex-item header-difficulty">
+        {{myPracticeQuiz[8].difficulty}}
+      </div>
+      <div class="mpq-flex-item header-timespent">
+        {{myPracticeQuiz[8].timeSpent}}
       </div>
       <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        <button class="secondary-button">Review</button>
+       <button class="secondary-button">Review</button>
       </div>
     </div>
 
+
     <!--tenth row-->
     <div class="mpq-flex-container">
-      <div class="mpq-flex-item">
-        jfjdksfns
+      <div class="mpq-flex-item header-qnumber">
+        <img *ngIf="myPracticeQuiz[9].isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator">
+        <img *ngIf="!myPracticeQuiz[9].isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator">
+         <p class="num">{{myPracticeQuiz[9].id}}</p>
+       <img *ngIf="myPracticeQuiz[9].isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark">
+      </div>
+      <div class="mpq-flex-item mpqquestion">
+        {{myPracticeQuiz[9].question}}
+      </div>
+      <div class="mpq-flex-item header-topic">
+        {{myPracticeQuiz[9].topic}}
+      </div>
+      <div class="mpq-flex-item header-difficulty">
+        {{myPracticeQuiz[9].difficulty}}
+      </div>
+      <div class="mpq-flex-item header-timespent">
+        {{myPracticeQuiz[9].timeSpent}}
       </div>
       <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        jfjdksfns
-      </div>
-      <div class="mpq-flex-item">
-        <button class="secondary-button">Review</button>
+       <button class="secondary-button">Review</button>
       </div>
     </div>
   </div>

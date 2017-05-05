@@ -107,6 +107,27 @@ nav {
     text-align: center;
 }
 
+.icon-indicator {
+    height: 12px;
+    padding-right: 5px;
+    display: inline-block;
+}
+
+.mpqquestion {
+    width: 300px;
+}
+
+.num {
+    height: 20px;
+    width: 7px;
+    color: #555555;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    display: inline-block;
+}
+
 .quiz-review {
 	height: 46px;
 	width: 214px;
@@ -243,16 +264,36 @@ nav {
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    -webkit-align-self: flex-start;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
     padding: 10px;
     }
 
 .mpq-review {
-    width: 80%;
+    width: 100%;
 }
 
 .mpq-gray {
     background-color: $gray-two;
+}
+
+.header-qnumber{
+    width: 80px;
+}
+
+.bookmark{
+    padding-left: 10px;
+}
+
+.header-topic{
+    width: auto;
+}
+
+.header-difficulty{
+    width: auto;
+}
+
+.header-timespent{
+    width: auto;
 }
