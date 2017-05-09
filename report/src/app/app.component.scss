@@ -1,9 +1,6 @@
-@import '../assets/global-styles/sass/_vars.scss';
-@import '../assets/global-styles/fonts/FuturaPT_font/stylesheet.css';
-@import '../assets/global-styles/fonts/ProximaNova/stylesheet.css';
+@import 'node_modules/@abot/atom-web-higgs/src/global-styles/sass/_vars';
 
-$gray-two: #F4F3EC;
-
+// TODO: We will replace this navigation w/ global nav once higgs is working
 nav {
     width: 100%;
     height: 42px;
@@ -11,6 +8,20 @@ nav {
     top: 0px;
     left: 0px;
     background-color: $primary-color;
+}
+
+nav > h2 {
+    height: 25px;
+    width: 70px;
+    color: #FFFFFF;
+    font-family: "Futura PT", sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    left: 20%;
+    top: -8px;
+    position: absolute;
+    line-height: 25px;
+    display: inline-block;
 }
 
 .kaplan-logo {
@@ -21,40 +32,16 @@ nav {
     display: inline-block;
 }
 
-.nav-title {
-    height: 25px;
-    width: 70px;
-    color: #FFFFFF;
-    font-family: "Futura PT";
-    font-size: 19px;
-    font-weight: bold;
-    left: 20%;
-    top: -8px;
-    position: absolute;
-    line-height: 25px;
-    display: inline-block;
-}
-
-.top-container {
+.quiz-review__header {
     position: relative;
     top: 50px;
     width: 80%;
     left: 10%;
 }
 
-.container {
-    position: relative;
-    top: 200px;
-    width: 80%;
-    left: 10%;
-    background-color: white;
-}
-
-.back-to-home {
-	height: 22px;
-	width: 131px;
-	color: #555555;
-	font-family: "Proxima Nova";
+.quiz-review__header > a {
+	color: $grey-color--one;
+	font-family: "Proxima Nova", sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 22px;
@@ -63,49 +50,28 @@ nav {
     position: absolute;
 }
 
-#mpq {
-    height: 22px;
-    width: 167px;
-    color: $primary-color;
-    font-family: "Proxima Nova";
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 22px;
+.quiz-review__header > a:hover {
+	text-decoration: underline;
 }
 
-#mpq-topics {
-    height: 15px;
-    width: 85px;
-    color: $primary-color;
-    font-family: "Proxima Nova";
-    font-size: 12px;
-    line-height: 15px;
-}
-
-#mpq-percentage {
-    height: 87px;	
-    width: 166.97px;	
-    color: $primary-color;	
-    font-family: "Proxima Nova";	
-    font-size: 72px;	
-    font-weight: 600;	
-    line-height: 87px;
-}
-
-.mpq-indicator {
-    height: 15px;
-    width: 61.78px;
-    color: #555555;	
-    font-family: "Proxima Nova";
+.quiz-review__header > p {
+    color: $grey-color--one;	
+    font-family: "Proxima Nova", sans-serif;
     font-size: 12px;
     font-weight: 600;
     line-height: 15px;
     text-align: center;
 }
 
-.mpq-icon {
-    text-align: center;
+.quiz-review__container {
+    position: relative;
+    top: 200px;
+    width: 80%;
+    left: 10%;
+    background-color: white;
 }
+
+
 
 .icon-indicator {
     height: 12px;
@@ -120,8 +86,8 @@ nav {
 .num {
     height: 20px;
     width: 7px;
-    color: #555555;
-    font-family: "Proxima Nova";
+    color: $grey-color--one;
+    font-family: "Proxima Nova", sans-serif;
     font-size: 16px;
     font-weight: bold;
     line-height: 20px;
@@ -132,7 +98,7 @@ nav {
 	height: 46px;
 	width: 214px;
 	color: $primary-color;
-	font-family: "Futura PT";
+	font-family: "Futura PT", sans-serif;
 	font-size: 36px;
 	font-weight: bold;
 	line-height: 46px;
@@ -145,7 +111,7 @@ nav {
     border-radius: 2px;
     background-color: #FFC82E;
     color: #1E0576;
-    font-family: "Proxima Nova";
+        font-family: "Proxima Nova", sans-serif;
     font-size: 16px;
     font-weight: 600;
     border: none;
@@ -159,7 +125,7 @@ nav {
     border-radius: 2px;
     background-color: $secondary-color;
     color: white;
-    font-family: "Proxima Nova";
+        font-family: "Proxima Nova", sans-serif;
     font-size: 16px;
     border: none;
     line-height: 20px;
@@ -175,12 +141,8 @@ nav {
     top: 80px;
 }
 
-.quiz-stats {
-    padding: 20px;
-}
-
 // FLEXBOX 
-.flex-container {
+.quiz-stats {
     display: -ms-inline-flexbox;
     display: -webkit-inline-flex;
     display: inline-flex;
@@ -201,7 +163,8 @@ nav {
     align-items: flex-start;
     }
 
-.flex-item {
+.quiz-stats__marker, 
+.quiz-stats__item {
     -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0;
@@ -212,29 +175,40 @@ nav {
     -ms-flex-item-align: end;
     align-self: flex-end;
     padding: 10px;
-    }
-
-@media (max-width: 500px) {
-    .nav-title {
-        display: none;
-    }
-
-    #overall-performance {
-        left: 0;
-        display: inline-block;
-        top: 150px;
-    }
-
-    .container {
-        top: 260px;
-    }
-
-    .mpq-flex-container {
-    overflow: auto;
-    }
-
+    text-align: center;
 }
 
+.quiz-stats__item > h2 {
+    color: $primary-color;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.quiz-stats__item > p {
+    color: $primary-color;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+}
+
+.quiz-stats__marker > p {
+    color: $primary-color;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.quiz-stats__item > span {	
+    color: $primary-color;	
+    font-family: "Proxima Nova", sans-serif;	
+    font-size: 72px;	
+    font-weight: 600;	
+    line-height: 87px;
+}
     
 .mpq-flex-container {
     display: -ms-flexbox;
@@ -272,10 +246,11 @@ nav {
 
 .mpq-review {
     width: 100%;
+    padding: 10px;
 }
 
 .mpq-gray {
-    background-color: $gray-two;
+    background-color: $grey-color--three;
 }
 
 .header-qnumber{
@@ -296,4 +271,25 @@ nav {
 
 .header-timespent{
     width: auto;
+}
+
+@media (max-width: 500px) {
+    .nav-title {
+        display: none;
+    }
+
+    #overall-performance {
+        left: 0;
+        display: inline-block;
+        top: 150px;
+    }
+
+    .quiz-review__container {
+        top: 260px;
+    }
+
+    .mpq-flex-container {
+    overflow: auto;
+    }
+
 }
