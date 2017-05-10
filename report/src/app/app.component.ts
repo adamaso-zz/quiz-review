@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { IHiggsNavigation, IHiggsNavigationSettings } from './app.interface';
 
 @Component({
   selector: 'app-root',
@@ -52,7 +51,7 @@ export class AppComponent {
     {
       id: 5,
       isCorrect: false,
-      isBookmarked: true,
+      isBookmarked: false,
       question: 'On the subject of the number of hospital beds, the author:',
       topic: 'PHYS',
       difficulty: 'Hard',

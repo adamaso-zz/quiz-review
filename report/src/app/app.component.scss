@@ -210,30 +210,55 @@ nav > h2 {
     font-weight:bold;
 }
 
-.header__question-number{
+    .header__question-number{
         align-items: baseline;
     }
 
     .header__question{
         position: relative; 
-        width: 300px;
+        width: 350px;
     }
 
     .header__topic{
         position: relative; 
-        left: -15px;
+        left: -55px;
         width: auto;
     }
 
     .header__difficulty{
         position: relative; 
-        left: -35px;
+        left: -65px;
         width: auto;
     }
 
     .header__time-spent{
         position: relative; 
-        left: -70px;
+        left: -115px;
+        width: auto;
+    }
+
+    .content__question-number{
+        align-items: baseline;
+    }
+
+    .content__question{
+        position: relative; 
+        width: 350px;
+    }
+
+    .content__topic{
+        position: relative; 
+        left: -15px;
+        width: auto;
+    }
+
+    .content__difficulty{
+        position: relative; 
+        width: auto;
+    }
+
+    .content__time-spent{
+        position: relative; 
         width: auto;
     }
 

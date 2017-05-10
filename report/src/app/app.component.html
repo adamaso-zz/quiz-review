@@ -66,32 +66,32 @@
     </div>
 
     <!-- quiz detail content -->
-    <div *ngFor="let question of myPracticeQuiz">
+    <div *ngFor="let questionElement of myPracticeQuiz">
       <div class="quiz-details__content mpq-gray">
-        <div class="quiz-details__content header__question-number">
-          <img *ngIf="question.isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator" tabindex="0"
+        <div class="quiz-details__content content__question-number">
+          <img *ngIf="questionElement.isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator" tabindex="0"
             alt="correct answer">
-          <img *ngIf="!question.isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator"
+          <img *ngIf="!questionElement.isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator"
             tabindex="0" alt="incorrect answer">
           <span aria-label="question number"></span>
-          <p class="num" tabindex="0" [innerHTML]="question.id"></p>
-          <img *ngIf="question.isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark" alt="bookmarked">
+          <p class="num" tabindex="0" [innerHTML]="questionElement.id"></p>
+          <img *ngIf="questionElement.isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark" alt="bookmarked">
         </div>
-        <div class="quiz-details__content header__question" tabindex="0" style="width: 300px;">
+        <div class="quiz-details__content content__question" tabindex="0">
           <span aria-label="question"></span>
-          <span [innerHTML]="question.question"></span>
+          <span [innerHTML]="questionElement.question"></span>
         </div>
-        <div class="quiz-details__content header__topic" tabindex="0">
+        <div class="quiz-details__content content__topic" tabindex="0">
           <span aria-label="topic"></span>
-          <span [innerHTML]="question.topic"></span>
+          <span [innerHTML]="questionElement.topic"></span>
         </div>
-        <div class="quiz-details__content header__difficulty" tabindex="0">
+        <div class="quiz-details__content content__difficulty" tabindex="0">
           <span aria-label="difficulty"></span>
-          <span [innerHTML]="question.difficulty"></span>
+          <span [innerHTML]="questionElement.difficulty"></span>
         </div>
-        <div class="quiz-details__content header__time-spent" tabindex="0">
+        <div class="quiz-details__content content__time-spent" tabindex="0">
           <span aria-label="time spent"></span>
-          <span [innerHTML]="question.timeSpent"></span>
+          <span [innerHTML]="questionElement.timeSpent"></span>
         </div>
         <div class="quiz-details__content">
           <button class="button-secondary--small">Review</button>
