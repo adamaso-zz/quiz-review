@@ -66,8 +66,8 @@
     </div>
 
     <!-- quiz detail content -->
-    <div *ngFor="let questionElement of myPracticeQuiz">
-      <div class="quiz-details__content mpq-gray">
+    <div *ngFor="let questionElement of myPracticeQuiz; let odd = odd">
+      <div class="quiz-details__content" [ngClass]="{ odd: odd }">
         <div class="quiz-details__content content__question-number">
           <img *ngIf="questionElement.isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator" tabindex="0"
             alt="correct answer">
