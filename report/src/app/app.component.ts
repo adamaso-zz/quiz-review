@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IHiggsNavigation, IHiggsNavigationSettings } from './app.interface';
 
 @Component({
   selector: 'app-root',
@@ -56,51 +57,6 @@ export class AppComponent {
       topic: 'PHYS',
       difficulty: 'Hard',
       timeSpent: '60 Sec'
-    },
-    {
-      id: 6,
-      isCorrect: true,
-      isBookmarked: false,
-      question: 'In the Van der Waals equation, the purpose of the n2 is:',
-      topic: 'CHEM',
-      difficulty: 'Hard',
-      timeSpent: '60 Sec'
-    },
-    {
-      id: 7,
-      isCorrect: true,
-      isBookmarked: false,
-      question: 'What is the mechanical advantage of the pulley sytem?',
-      topic: 'PHYS',
-      difficulty: 'Easy',
-      timeSpent: '60 Sec'
-    },
-    {
-      id: 8,
-      isCorrect: false,
-      isBookmarked: true,
-      question: 'If the weight moves down 1 cm, how far does the patient’s leg move?',
-      topic: 'CHEM',
-      difficulty: 'Hard',
-      timeSpent: '70 Sec'
-    },
-    {
-      id: 9,
-      isCorrect: true,
-      isBookmarked: false,
-      question: 'Using the VSEPR theory, the shape of PC is:',
-      topic: 'CHEM',
-      difficulty: 'Easy',
-      timeSpent: '60 Sec'
-    },
-    {
-      id: 10,
-      isCorrect: true,
-      isBookmarked: false,
-      question: 'The rate law for the reaction is',
-      topic: 'PHYS',
-      difficulty: 'Easy',
-      timeSpent: '10 Sec'
     }
     ];
 }
