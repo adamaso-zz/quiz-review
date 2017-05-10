@@ -6,9 +6,9 @@
 <section class="quiz-review__header">
   <a href="#">
     &#8249; Back to home</a>
-      <h1 class="quiz-review" tabindex="0">Quiz Review</h1>
+  <h1 class="quiz-review" tabindex="0">Quiz Review</h1>
 
-      <button class="button-primary--small" id="overall-performance">Overall Performance</button>
+  <button class="button-primary--small" id="overall-performance">Overall Performance</button>
 </section>
 
 <section class="quiz-review__container">
@@ -66,16 +66,17 @@
     </div>
 
     <!-- quiz detail content -->
-    <div *ngFor="let questionElement of myPracticeQuiz; let odd = odd">
-      <div class="quiz-details__content" [ngClass]="{ odd: odd }">
+    <div *ngFor="let questionElement of myPracticeQuiz;">
+      <div class="quiz-details__content">
         <div class="quiz-details__content content__question-number">
           <img *ngIf="questionElement.isCorrect" src="../assets/global-styles/images/correct.svg" class="icon-indicator" tabindex="0"
             alt="correct answer">
-          <img *ngIf="!questionElement.isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator"
-            tabindex="0" alt="incorrect answer">
+          <img *ngIf="!questionElement.isCorrect" src="../assets/global-styles/images/incorrect.svg" class="icon-indicator" tabindex="0"
+            alt="incorrect answer">
           <span aria-label="question number"></span>
           <p class="num" tabindex="0" [innerHTML]="questionElement.id"></p>
-          <img *ngIf="questionElement.isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark" alt="bookmarked">
+          <img *ngIf="questionElement.isBookmarked" src="../assets/global-styles/images/bookmark.svg" class="icon-indicator bookmark"
+            alt="bookmarked">
         </div>
         <div class="quiz-details__content content__question" tabindex="0">
           <span aria-label="question"></span>
@@ -99,6 +100,6 @@
 
       </div>
     </div>
-    
+
   </div>
 </section>

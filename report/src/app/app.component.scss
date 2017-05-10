@@ -266,7 +266,7 @@ nav > h2 {
     padding: 10px;
 }
 
-.odd {
+.quiz-details > div:nth-child(even) {
     background-color: $grey-color--three;
 }
 
